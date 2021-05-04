@@ -1,0 +1,8 @@
+.cities {
+  max-width: 75%;
+  max-height: 75vh;
+  display: block;
+}
+h1 {
+  text-align: center;
+}
