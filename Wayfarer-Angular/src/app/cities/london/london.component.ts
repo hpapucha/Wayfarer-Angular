@@ -15,7 +15,7 @@ export class LondonComponent implements OnInit {
 
   findComment(commentName){
     if (commentName === this.divName){
-      this.divTest = document.createElement('p');
+      this.divTest = document.createElement('div');
       this.divTest.innerText = this.divPost.innerHTML;
       this.filter.appendChild(this.divTest);
     }

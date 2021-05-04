@@ -4,6 +4,10 @@ h2 {
   display:block;
   background-color: orange;
 }
+h3 {
+  text-align: center;
+
+}
 section {
   display: flex;
   justify-content: space-between;
