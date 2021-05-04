@@ -39,3 +39,14 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
+footer {
+  margin-top: 20em;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+}
+
