@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CitiesComponent } from './cities/cities.component';
 import { LondonComponent } from './cities/london/london.component';
 import { ParisComponent } from './cities/paris/paris.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ParisComponent } from './cities/paris/paris.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

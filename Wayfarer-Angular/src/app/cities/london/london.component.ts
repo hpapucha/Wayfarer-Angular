@@ -6,9 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./london.component.css']
 })
 export class LondonComponent implements OnInit {
-
+  commentName: string;
+  divName = document.querySelector('.userName');
+  divPost = document.querySelector('.post');
+  filter = document.querySelector('.filteredComment');
+  divTest: any;
   constructor() { }
 
+  findComment(commentName){
+    if (commentName === this.divName){
+      this.divTest = document.createElement('p');
+      this.divTest.innerText = this.divPost.innerHTML;
+      this.filter.appendChild(this.divTest);
+    }
+    else{
+      console.log("error");
+    }
+  }
   ngOnInit(): void {
   }
 

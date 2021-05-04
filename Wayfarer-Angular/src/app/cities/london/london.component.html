@@ -4,10 +4,17 @@
   <div>
 <img class ="cities" src = "assets/images/london.jpg">
   </div>
-
     <aside>
       <h3>City Reviews</h3>
-      <input type="submit" value="Show Newest"/>
+
+      <div class="filteredComment">Filter</div>
+
+      <form>
+        <input type="text" placeholder="Search Comments"/>
+        <input type="submit" value="Submit" (click)="findComment(commentName)">
+      </form>
+
+
       <div class ="post">
         <div class ="userName">John Davis</div>
         <img class="avatar" src="assets/images/avatar.jpg">

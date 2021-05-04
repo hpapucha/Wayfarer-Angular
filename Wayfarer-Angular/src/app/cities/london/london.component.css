@@ -33,6 +33,7 @@ aside{
   margin-bottom: 1em;
 }
 input{
-  max-width: 20%;
+  max-width: 30%;
+  max-height: 20%;
   margin-bottom: 5%;
 }
