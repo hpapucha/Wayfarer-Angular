@@ -1,6 +1,6 @@
 .cities {
-  max-width: 75%;
-  max-height: 75vh;
+  max-width: 100%;
+  max-height: 50vh;
   display: block;
 }
 h1 {
