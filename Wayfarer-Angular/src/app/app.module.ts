@@ -8,6 +8,7 @@ import { LondonComponent } from './cities/london/london.component';
 import { ParisComponent } from './cities/paris/paris.component';
 import {FormsModule} from '@angular/forms';
 import { DumbledoreComponent } from './cities/paris/dumbledore/dumbledore.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DumbledoreComponent } from './cities/paris/dumbledore/dumbledore.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

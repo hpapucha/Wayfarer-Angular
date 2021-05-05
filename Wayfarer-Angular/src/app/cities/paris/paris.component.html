@@ -3,6 +3,13 @@
 <section>
   <div>
     <img class ="cities" src = "assets/images/paris.jpg">
+    <h4>Check the weather in Paris by ZIP</h4>
+      <input [(ngModel)]="zip" type="text" placeholder="Zip Code Here" (keyup)="findWeather(zip)" />
+    <div *ngIf="weather">
+      <h3>Weather in Paris:</h3>
+      <p>Currently {{weather.weather[0].description}}.</p>
+      <p>High of {{weather.main.temp_max}} Low of {{weather.main.temp_min}} Degrees.</p>
+    </div>
   </div>
 
   <aside>
