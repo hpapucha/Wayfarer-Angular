@@ -13,7 +13,8 @@ import {FormsModule} from '@angular/forms';
     AppComponent,
     CitiesComponent,
     LondonComponent,
-    ParisComponent
+    ParisComponent,
+
   ],
   imports: [
     BrowserModule,

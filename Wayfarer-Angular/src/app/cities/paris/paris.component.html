@@ -7,26 +7,13 @@
 
   <aside>
     <h3>City Reviews</h3>
-    <div class ="post">
-      <div class ="userName">Joe Doe</div>
-      <img class="avatar" src="assets/images/avatar.jpg">
-      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Dolor magna eget est lorem ipsum dolor sit amet. Malesuada bibendum arcu vitae elementum.
-        Lorem ipsum dolor sit amet. Lacus luctus accumsan tortor posuere ac ut. </div>
+
+    <div class ="post" *ngFor="let i of commentsArray">
+      <p> {{i.name}}</p>
+      <p> {{i.text}}</p>
+      <img src="{{i.avatar}}">
     </div>
-    <div class ="post">
-      <div class ="userName">Emanuel Macron</div>
-      <img class="avatar" src="assets/images/avatar.jpg">
-      <div>Cursus eget nunc scelerisque viverra mauris. Tellus orci ac auctor augue.
-        Et malesuada fames ac turpis egestas sed tempus urna et.
-        Eget magna fermentum iaculis eu non diam.
-        Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Cras tincidunt lobortis feugiat vivamus. </div>
-    </div>
-    <div class="post">
-      <div class ="userName">Greta Tumberg</div>
-      <img class="avatar" src="assets/images/avatar.jpg">
-      <div>Cursus eget nunc scelerisque viverra mauris. Tellus orci ac auctor augue.
-        Et malesuada fames ac turpis egestas sed tempus urna et.</div>
-    </div>
+
   </aside>
 </section>
+
