@@ -7,9 +7,11 @@
 
   <aside>
     <h3>City Reviews</h3>
-    <input [(ngModel)]="account.name" (ngModelChange)="onChanges()">
+    <input [(ngModel)]="account.name" (ngModelChange)="onChanges()" placeholder="Search by Name">
     <pre *ngIf="account.name === 'Dumbledore'">{{currentAccount|json}}</pre>
     <pre *ngIf="account.name === 'Ron'">{{currentAccount|json}}</pre>
+    <pre *ngIf="account.name === 'Harry'">{{currentAccount|json}}</pre>
+    <pre *ngIf="account.name === 'Hermione'">{{currentAccount|json}}</pre>
 
     <div class ="post" *ngFor="let i of commentsArray">
       <p> {{i.name}}</p>
