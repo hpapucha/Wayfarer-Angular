@@ -48,3 +48,10 @@ img {
   max-width: 25%;
   max-height: 25vh;
 }
+.submitComments{
+  max-width: 50%;
+  max-height: 20vh;
+  display: block;
+  text-align: center;
+
+}

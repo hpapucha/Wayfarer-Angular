@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {CitiesComponent} from './cities/cities.component';
 import {LondonComponent} from './cities/london/london.component';
 import {ParisComponent} from './cities/paris/paris.component';
+import {DumbledoreComponent} from './cities/paris/dumbledore/dumbledore.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,11 @@ const routes: Routes = [
       },
       {
         path: 'paris',
-        component: ParisComponent
+        component: ParisComponent,
+      },
+      {
+        path: 'dumbledore',
+        component: DumbledoreComponent
       }
     ]
   },

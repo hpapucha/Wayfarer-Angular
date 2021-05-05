@@ -14,10 +14,16 @@
     <pre *ngIf="account.name === 'Hermione'">{{currentAccount|json}}</pre>
 
     <div class ="post" *ngFor="let i of commentsArray">
-      <p> {{i.name}}</p>
+      <a routerLink="/cities/dumbledore">{{i.name}}</a>
       <img class="avatar" src="{{i.avatar}}">
       <p> {{i.text}}</p>
     </div>
   </aside>
+  <router-outlet></router-outlet>
+</section>
+<section class ="submitComments">
+<form action="" class="postComment"> Name: <input type="text"></form>
+<textarea rows="4" cols="50" placeholder="Comment"></textarea><br>
+<input type="submit" value="Submit">
 </section>
 

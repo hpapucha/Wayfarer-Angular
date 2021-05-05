@@ -7,6 +7,7 @@ import { CitiesComponent } from './cities/cities.component';
 import { LondonComponent } from './cities/london/london.component';
 import { ParisComponent } from './cities/paris/paris.component';
 import {FormsModule} from '@angular/forms';
+import { DumbledoreComponent } from './cities/paris/dumbledore/dumbledore.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import {FormsModule} from '@angular/forms';
     CitiesComponent,
     LondonComponent,
     ParisComponent,
+    DumbledoreComponent,
 
   ],
   imports: [
