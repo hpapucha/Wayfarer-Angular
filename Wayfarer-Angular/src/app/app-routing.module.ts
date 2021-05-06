@@ -4,6 +4,7 @@ import {CitiesComponent} from './cities/cities.component';
 import {LondonComponent} from './cities/london/london.component';
 import {ParisComponent} from './cities/paris/paris.component';
 import {DumbledoreComponent} from './cities/paris/dumbledore/dumbledore.component';
+import {RonComponent} from './cities/paris/ron/ron.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,11 @@ const routes: Routes = [
       },
       {
         path: 'dumbledore',
-        component: DumbledoreComponent
+        component: DumbledoreComponent,
+      },
+      {
+        path: 'ron',
+        component: RonComponent
       }
     ]
   },
