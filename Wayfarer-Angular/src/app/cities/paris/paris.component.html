@@ -19,7 +19,6 @@
     <pre *ngIf="account.name === 'Ron'">{{currentAccount|json}}</pre>
     <pre *ngIf="account.name === 'Harry'">{{currentAccount|json}}</pre>
     <pre *ngIf="account.name === 'Hermione'">{{currentAccount|json}}</pre>
-<!--    <a routerLink="/info/{{turretNumber +1}}"><img appHover src="/assets/images/turret.png" alt=""></a>-->
     <div class ="post" *ngFor="let i of commentsArray">
       <a routerLink="/cities/{{i.name.toLowerCase()}}">{{i.name}}</a>
       <img class="avatar" src="{{i.avatar}}">
@@ -30,8 +29,8 @@
 </section>
 <section class ="submitComments">
 <form action="" class="postName">
-  Name: <input type="text" name="username" [(ngModel)]="username">
+  Name: <input type="text" maxlength="25" name="username" [(ngModel)]="username">
 </form>
-<textarea class="postComment" rows="4" cols="50" placeholder="Comment(Check console)" [(ngModel)]="comment"></textarea><br>
+<textarea class="postComment" rows="4" cols="50" maxlength="200" placeholder="Comment(Check console)" [(ngModel)]="comment"></textarea><br>
   <button type="button" (click)="clickMe(username, comment)">Submit</button>
 </section>
