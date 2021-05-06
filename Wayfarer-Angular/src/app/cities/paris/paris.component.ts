@@ -12,6 +12,8 @@ export class ParisComponent implements OnInit {
   zip: string;
   weather: any;
   searchSubject = new Subject();
+  username: any;
+  comment: any;
   public commentsArray: any = [
     {id: 1, avatar: 'assets/images/dumbledore.jpg', name: 'Dumbledore', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n' +
         '                     dolore magna aliqua. Dolor magna eget est lorem ipsum dolor sit amet. Malesuada bibendum arcu vitae elementum.'},
@@ -32,8 +34,11 @@ export class ParisComponent implements OnInit {
   constructor(private http: HttpClient) {
   }
 
-  findWeather(zip) {
+  findWeather(zip): void {
     this.searchSubject.next(zip);
+  }
+  clickMe(username: any, comment: any): void {
+    console.log('Added to imaginary database:', username, 'Comment: ', comment);
   }
 
   ngOnInit() {

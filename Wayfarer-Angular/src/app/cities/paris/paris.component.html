@@ -29,8 +29,9 @@
   <router-outlet></router-outlet>
 </section>
 <section class ="submitComments">
-<form action="" class="postComment"> Name: <input type="text"></form>
-<textarea rows="4" cols="50" placeholder="Comment"></textarea><br>
-<input type="submit" value="Submit">
+<form action="" class="postName">
+  Name: <input type="text" name="username" [(ngModel)]="username">
+</form>
+<textarea class="postComment" rows="4" cols="50" placeholder="Comment" [(ngModel)]="comment"></textarea><br>
+  <button type="button" (click)="clickMe(username, comment)">Submit</button>
 </section>
-
