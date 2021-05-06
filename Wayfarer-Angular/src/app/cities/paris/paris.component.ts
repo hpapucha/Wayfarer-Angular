@@ -38,7 +38,12 @@ export class ParisComponent implements OnInit {
     this.searchSubject.next(zip);
   }
   clickMe(username: any, comment: any): void {
-    console.log('Added to imaginary database:', username, 'Comment: ', comment);
+    if (username != null && comment != null) {
+      console.log('Added to imaginary database username:', username, 'Comment: ', comment);
+    }
+    else if (username == null && comment == null){
+      console.log('Null statement');
+    }
   }
 
   ngOnInit() {
