@@ -4,7 +4,7 @@
   <div>
     <img class ="cities" src = "assets/images/paris.jpg">
     <h4>Check the weather in Paris by ZIP</h4>
-      <input [(ngModel)]="zip" type="text" placeholder="Zip Code Here(Works only with USA Zips)" (keyup)="findWeather(zip)" />
+      <input [(ngModel)]="zip" type="text" placeholder="Zip-Works only with USA Zip" (keyup)="findWeather(zip)" />
     <div *ngIf="weather">
       <h3>Weather in Paris:</h3>
       <p>Currently {{weather.weather[0].description}}.</p>
